@@ -1,9 +1,12 @@
 
 body {
 	margin: 0;
+	background-color: #FAFAFA;
 }
 
 .main {
+	position: absolute;
+	top: 80px;
 	font-family:  'Source Sans Pro', sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -49,7 +52,7 @@ body {
 .story-bar .name-story span {
 	display: none;
 }
-.suggest, .acc, .title {
+.suggest, .acc, .title, .side-bar .link {
 	display: none;
 }
 
@@ -242,14 +245,21 @@ body {
 	}
 	.side-bar .story-bar .story .name-story span {
 		display: block;
-		font-size: 10px;
+		font-size: 12px;
 		color: #999;
+		margin-left: -4px;
 	}
 
 	.side-bar .link {
 		padding-top: 10px;
+		display: block;
 	}
 	.side-bar .link a:link {
+		color: #bbb;
+		text-decoration: none;
+		font-size: 0.75rem;
+	}
+	.side-bar .link a:visited {
 		color: #bbb;
 		text-decoration: none;
 		font-size: 0.75rem;

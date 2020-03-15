@@ -1,7 +1,4 @@
 
-body {
-	margin: 0;
-}
 
 .header {
 	width: 100%;
@@ -20,7 +17,7 @@ body {
 	margin: 0 20px;
 	margin-top: 10px;
 	position: absolute;
-	left: 10%;
+	left: 14%;
 }
 
 .header .logo-header img {
@@ -38,6 +35,10 @@ body {
 	text-align: center;
 	background-color: #FAFAFA;
 }
+.header .search-header {
+	position: absolute;
+	right: 45%;
+}
 
 .header .search-header input::placeholder {
 	text-align: center;
@@ -51,7 +52,7 @@ body {
 	/*justify-content: space-between;*/
 	align-items: center;
 	position: absolute;
-	right: 10%;
+	right: 12%;
 }
 
 .header .icon-header .icon {
