@@ -1,0 +1,28 @@
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.top-bar {
+	height: 55px;
+}
+.top-bar .col:nth-child(2) input {
+	width: 220px;
+	height: 27px;
+	border: 1px solid #dee2e6;
+	border-radius: 3px;
+}
+.top-bar .col:nth-child(2) input::placeholder {
+	text-align: center;
+}
+.top-bar .col:last-child img {
+	height: 21px;
+}
+
+@media (min-width: 992px) {
+	.top-bar .col:last-child div {
+		width: 60%;
+	}
+}
