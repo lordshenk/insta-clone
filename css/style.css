@@ -7,6 +7,8 @@ body {
 
 .top-bar {
 	height: 55px;
+	z-index: 9999;
+	background-color: #fff;
 }
 .top-bar .col:nth-child(2) input {
 	width: 220px;
@@ -14,6 +16,13 @@ body {
 	border: 1px solid #dee2e6;
 	border-radius: 3px;
 }
+
+@media (min-width: 992px) {
+	.top-bar .col:nth-child(1) img {
+		margin-left: 16vw;
+	}
+}
+
 .top-bar .col:nth-child(2) input::placeholder {
 	text-align: center;
 }
@@ -24,5 +33,64 @@ body {
 @media (min-width: 992px) {
 	.top-bar .col:last-child div {
 		width: 60%;
+	}
+}
+
+.main .row .col {
+	max-width: 600px;
+}
+.story {
+	position: relative;
+	width: 100%;
+	height: 115px;
+	margin: 55px 0 0px;
+	border-right: 1px solid #dee2e6;
+	border-left: 1px solid #dee2e6;
+	overflow-x: hidden;
+}
+.story div {
+
+}
+.story div img {
+	height: 60%;
+	border-radius: 50px;
+	padding: 2px;
+	border: 2px solid #ef2169;
+}
+.story div p {
+	font-size: 14px;
+}
+
+#story-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+@media (min-width: 576px) {
+	.story {
+		border: 1px solid #dee2e6;
+		margin: 90px 0 30px;
+	}
+}
+.news-feed {
+	width: 100%;
+}
+.news .head {
+	height: 60px;
+	font-size: 14px;
+}
+.news .head p {
+	margin: 0;
+}
+.news .head p:first-child {
+	font-weight: bold;
+}
+.news .head img:last-child {
+	height: 20px;
+}
+
+@media (min-width: 992px) {
+	.main .row .col {
+		margin-left: 17vw;
 	}
 }
