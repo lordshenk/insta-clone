@@ -1,14 +1,22 @@
 body {
 	padding: 0;
 	margin: 0;
+	width: 100%;
+	height: 100%;
 	overflow-x: hidden;
+	overflow-y: scroll;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .top-bar {
+	width: 100%;
 	height: 55px;
 	z-index: 9999;
 	background-color: #fff;
+}
+.top-bar .row {
+	max-width: 950px;
+	margin: 0 auto;
 }
 .top-bar .col:nth-child(2) input {
 	width: 220px;
@@ -17,26 +25,35 @@ body {
 	border-radius: 3px;
 }
 
-@media (min-width: 992px) {
-	.top-bar .col:nth-child(1) img {
-		margin-left: 16vw;
-	}
-}
-
 .top-bar .col:nth-child(2) input::placeholder {
 	text-align: center;
+}
+.top-bar .col:last-child div {
+	max-width: 80%;
+	margin-left: auto;
 }
 .top-bar .col:last-child img {
 	height: 21px;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 768px) {
+	.top-bar .col:nth-child(2) {
+		display: none;
+	}
 	.top-bar .col:last-child div {
-		width: 60%;
+		max-width: 100%;
 	}
 }
 
-.main .row .col {
+.main {
+	max-width: 100%;
+}
+.main .row {
+	width: 100%;
+	margin: 0;
+}
+
+.main .row .col:first-child {
 	max-width: 600px;
 }
 .story {
@@ -91,6 +108,101 @@ body {
 
 @media (min-width: 992px) {
 	.main .row .col {
-		margin-left: 17vw;
 	}
+}
+.new .img {
+	max-width: 600px;
+	max-height: 750px;
+}
+.news .reaction {
+	height: 40px;
+	width: 100%;
+	display: flex;
+	padding: 0 16px;
+	align-items: center;
+	margin-top: 5px;
+}
+.news .reaction img {
+	height: 65%;
+	margin-right: 18px;
+}
+.news .reaction img:last-child {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.list-cmt {
+	padding: 0 16px;
+}
+.cmt p {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.cmt span {
+	font-weight: normal;
+}
+.cmt p:nth-of-type(3) {
+	font-weight: normal;
+	color: #aaa;
+}
+.cmt p:last-of-type {
+	font-size: 11px;
+	font-weight: normal;
+	color: #aaa;
+}
+.cmt .write-cmt {
+	position: relative;
+	display: flex;
+	border-top: 1px solid #dee2e6;
+	margin-top: 10px;
+}
+.cmt .write-cmt input {
+	padding-left: 16px;
+	max-width: 100%;
+	height: 55px;
+	border: none;
+	flex-grow: 1;
+}
+.cmt .write-cmt input:focus {
+	outline: none;
+}
+.cmt .write-cmt a {
+	opacity: .5;
+	font-weight: bold;
+	align-self: center;
+	padding-right: 16px;
+}
+
+.side-bar {
+	position: sticky;
+	top: 110px;
+	height: 500px;
+	padding: 0;
+	margin-left: 30px;
+	max-width: 300px;
+}
+.side-bar .account {
+	height: 55px;
+}
+.side-bar .account img {
+	height: 100%;
+	border-radius: 50px;
+}
+.side-bar .account div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 15px;
+}
+.side-bar .account p {
+	margin: 0;
+}
+.side-bar .account p:first-of-type {
+	font-size: 14px;
+	font-weight: bold;
+}
+.side-bar .account p:last-of-type {
+	font-size: 13px;
+	color: #aaa;
 }
