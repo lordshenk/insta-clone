@@ -4,7 +4,7 @@ body {
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -24,7 +24,9 @@ body {
 	border: 1px solid #dee2e6;
 	border-radius: 3px;
 }
-
+.top-bar input {
+	outline: none;
+}
 .top-bar .col:nth-child(2) input::placeholder {
 	text-align: center;
 }
@@ -283,4 +285,20 @@ body {
 .footer div:not(:last-child) span:not(:last-child)::after {
 	content: '\00B7';
 	padding: 0 1px;
+}
+.preload {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: #fcfcfc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.preload img {
+	opacity: .5;
+	max-width: 50px;
 }
