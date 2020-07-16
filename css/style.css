@@ -66,11 +66,19 @@ body {
 	margin: 55px 0 0px;
 	border-right: 1px solid #dee2e6;
 	border-left: 1px solid #dee2e6;
-	overflow-x: hidden;
+	overflow-x: scroll;
 }
-.story div {
+.story::-webkit-scrollbar {
+	display: none;
+}
+.story {
+	-webkit-overflow-scrolling: touch;
+}
+.story {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
 
-}
 .story div img {
 	height: 60%;
 	border-radius: 50px;
@@ -81,11 +89,6 @@ body {
 	font-size: 14px;
 }
 
-#story-btn {
-	position: absolute;
-	top: 0;
-	right: 0;
-}
 @media (min-width: 576px) {
 	.story {
 		border: 1px solid #dee2e6;
